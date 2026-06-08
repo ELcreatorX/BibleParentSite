@@ -4,7 +4,7 @@
 //  Until you set this, submissions are stored locally in your browser
 //  so you can still test the page.
 // ─────────────────────────────────────────────────────────────
-const ENDPOINT_URL = "REMPLACEZ_PAR_VOTRE_URL_APPS_SCRIPT";
+const ENDPOINT_URL = "https://script.google.com/macros/s/AKfycbzGdm2omXXy8R2_KaNC-9QeSJERVsd6-jkYCBs02mlD1L8w-KmmXPVpgEENAkvsEh3NyQ/exec";
 
 const form = document.getElementById("waitlist-form");
 const emailInput = document.getElementById("email");
