@@ -222,8 +222,51 @@ button[type="submit"]:disabled { cursor: not-allowed; opacity: 0.75; }
 
 /* ---------- Success state ---------- */
 .hero.submitted .waitlist-form,
-.hero.submitted .reassurance {
+.hero.submitted .reassurance,
+.hero.submitted .tagline,
+.hero.submitted .perks,
+.hero.submitted .badge {
   display: none;
+}
+
+/* ---------- Thank-you confirmation ---------- */
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  max-width: 440px;
+  animation: rise 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.thank-you .check {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  color: #1a1205;
+  background: linear-gradient(180deg, var(--accent-soft), var(--accent));
+  box-shadow: 0 8px 28px rgba(201, 162, 75, 0.35);
+}
+
+.thank-you h2 {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(1.8rem, 6vw, 2.4rem);
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.thank-you p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-dim);
+}
+
+.thank-you-sign {
+  color: var(--accent-soft) !important;
+  font-weight: 500;
 }
 
 @media (max-width: 480px) {

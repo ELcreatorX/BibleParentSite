@@ -11,6 +11,7 @@ const emailInput = document.getElementById("email");
 const submitBtn = document.getElementById("submit-btn");
 const message = document.getElementById("form-message");
 const hero = document.querySelector(".hero");
+const thankYou = document.getElementById("thank-you");
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
@@ -63,7 +64,7 @@ form.addEventListener("submit", async (e) => {
     }
 
     hero.classList.add("submitted");
-    showMessage("🎉 Thank you! You're on the list. We'll keep you posted.", "success");
+    thankYou.hidden = false;
     form.reset();
   } catch (err) {
     console.error(err);
