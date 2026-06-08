@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bible Parent — Join the waitlist</title>
+  <meta name="description" content="Bible Parent is coming soon: the app that helps parents raise their children in faith. Join the waitlist for early access." />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Bible Parent — Waitlist" />
+  <meta property="og:description" content="The app that helps your family grow in faith. Sign up to be among the first." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <main class="hero">
+    <img src="assets/logo.png" alt="Bible Parent logo" class="logo" width="120" height="137" />
+
+    <span class="badge">✦ Coming soon</span>
+
+    <h1>Bible Parent</h1>
+    <p class="tagline">
+      The app that helps parents raise their children in faith.
+      Be among the first to get access.
+    </p>
+
+    <form id="waitlist-form" class="waitlist-form" novalidate>
+      <div class="field">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          inputmode="email"
+          autocomplete="email"
+          placeholder="you@email.com"
+          aria-label="Email address"
+          required
+        />
+        <button type="submit" id="submit-btn">
+          <span class="btn-label">Join</span>
+          <span class="btn-spinner" aria-hidden="true"></span>
+        </button>
+      </div>
+      <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+    </form>
+
+    <p class="reassurance">No spam. Unsubscribe in one click.</p>
+
+    <ul class="perks">
+      <li><span>✦</span> Early access</li>
+      <li><span>✦</span> Founder pricing</li>
+      <li><span>✦</span> Your voice matters</li>
+    </ul>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Bible Parent. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
